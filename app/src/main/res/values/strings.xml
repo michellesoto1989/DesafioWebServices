@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">DsafioWebServices</string>
+    <string name="spiderman">spiderman</string>
+    <string name="marvel">MARVEL</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="btn_login">Login</string>
+    <string name="email">Email</string>
+    <string name="create_account">Create Account</string>
+    <string name="remember">Remember</string>
+    <string name="welcome">Welcome To The Marvel HQs</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="num">num HQ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="price">PRICE: </string>
+    <string name="price2">Price</string>
+    <string name="nameHQ">Nome HQ</string>
+    <string name="desc">descricao</string>
+    <string name="publ">Published:</string>
+    <string name="data">Data</string>
+    <string name="page">Pages: </string>
+    <string name="pageDetail">PAGES</string>
+</resources>

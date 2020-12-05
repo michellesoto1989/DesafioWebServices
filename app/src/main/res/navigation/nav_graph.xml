@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentSplash">
+
+    <fragment
+        android:id="@+id/fragmentListHQ"
+        android:name="br.com.digitalhouse.dsafiowebservices.modelo.FragmentListHQ"
+        android:label="fragment_list_h_q"
+        tools:layout="@layout/fragment_list_h_q" >
+        <action
+            android:id="@+id/action_fragmentListHQ_to_fragmentDetail"
+            app:destination="@id/fragmentDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetail"
+        android:name="br.com.digitalhouse.dsafiowebservices.modelo.FragmentListHQ"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_fragmentDetail_to_fragmentImageHQ"
+            app:destination="@id/fragmentImageHQ" />
+        <action
+            android:id="@+id/action_fragmentDetail_to_fragmentListHQ"
+            app:destination="@id/fragmentListHQ" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentImageHQ"
+        android:name="br.com.digitalhouse.dsafiowebservices.modelo.FragmentListHQ"
+        android:label="fragment_image_h_q"
+        tools:layout="@layout/fragment_image_h_q" >
+        <action
+            android:id="@+id/action_fragmentImageHQ_to_fragmentDetail"
+            app:destination="@id/fragmentDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSplash"
+        android:name="br.com.digitalhouse.dsafiowebservices.modelo.FragmentListHQ"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_fragmentSplash_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="br.com.digitalhouse.dsafiowebservices.modelo.FragmentListHQ"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentCadastro"
+            app:destination="@id/fragmentCadastro" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentListHQ"
+            app:destination="@id/fragmentListHQ" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCadastro"
+        android:name="br.com.digitalhouse.dsafiowebservices.modelo.FragmentListHQ"
+        android:label="fragment_cadastro"
+        tools:layout="@layout/fragment_cadastro" >
+        <action
+            android:id="@+id/action_fragmentCadastro_to_fragmentList"
+            app:destination="@id/fragmentListHQ" />
+        <action
+            android:id="@+id/action_fragmentCadastro_to_fragmentLoginBack"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
+</navigation>
